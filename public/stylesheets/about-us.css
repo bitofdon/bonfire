@@ -1,0 +1,33 @@
+.media-right__media {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height:350px;
+}
+
+.media-right__copy {
+    padding-bottom: 150px;
+    padding-left: calc(50% - 455px);
+}
+
+.section .module-container.media-right {
+    padding-bottom: 0;
+}
+
+.media-right.medium {
+    background-color: #d7d2cb;
+}
+.section .module-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.media-right {
+    padding-bottom: 0;
+}
+.media-right {
+    padding-left: 10px;
+}
+
+#bonfire-aboutus .row {
+  display: inline;
+}

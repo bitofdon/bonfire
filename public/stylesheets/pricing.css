@@ -1,0 +1,204 @@
+.pricing-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.pricing-container h1 {
+	font-family: Archivo Narrow;
+}
+
+.pricing-box {
+    width: 30%; 
+    height: 350px;
+    display:inline-block; 
+    margin: 10px; 
+    padding: 9px;
+    background-color: white;
+}
+
+.pricing-title {
+    padding: 10px; 
+    font-size: 25pt; 
+    height: 29%;
+}
+
+.pricing-detail {
+	height: 29%;
+	font-family: Source Sans Pro;
+	font-size: 28pt;
+	font-weight: 500;
+}
+
+.pricing-detail-setup {
+	height: 29%;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: Roboto;
+}
+
+.pricing-border {
+    padding: 10px;
+}
+
+.pricing-box p {
+	height: 29%;
+}
+
+.pricing-box-removethis {
+	border-right: solid thin lightgray;
+}
+
+.pricing-box-removethis:nth-of-type(3) {
+	border: none;
+}
+
+.pricing-dollarsign {
+	font-size: 14pt; 
+	color: gray; 
+	margin: 0; 
+	display: inline-block;
+	vertical-align: 10px;
+}
+
+.pricing-dollaramount {
+	display: inline-block;
+}
+
+.pricing-box button {
+	background: linear-gradient(to right, #13aa52, #13aa50);
+	color: white;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+#contact-form {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#contact-form input {
+  margin: 4px;
+  font-size: 18px;
+}
+
+#contact-form button {
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff4d4d, #ff6666);
+}
+
+#contact-form-page h1 {
+  font-family: Archivo Narrow;
+  font-weight: 300;
+}
+
+.row-headliner {
+  text-align: center;
+}
+
+#contact-form-page {
+  margin-top: 140px;
+}
+
+
+
+@media only screen and (max-width: 780px) {
+  .pricing-container {
+  	margin: 50px 0px;
+  	width: 100%;
+  }
+
+  .pricing-box {
+  	clear: both;
+  	width: 80%;
+  	margin: 0;
+  	margin-top: 20px;
+  	border: solid thin lightgray;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+}
+
+
+
+     #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      /*
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      */
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }

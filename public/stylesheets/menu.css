@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway|Roboto|Source+Sans+Pro');
+
+.cito-row-title {
+	display: table;
+	padding: 5px 10px;
+	margin: 0 auto;
+}
+
+.cito-row-title span {
+	font-size: 25pt; 
+	font-family: Oswald; 
+	font-weight: 400; 
+	color: #dc5034
+}
+
+.center {
+	display: table;
+	margin: 0 auto !important;
+}
+
+.bord {
+	/*background-color: white;*/
+	margin: 10px;
+	min-height: 220px;
+	/*box-shadow: 5px 5px 5px lightgray;*/
+	border-radius: 20px;
+	padding: 10px 0px !important;
+}
+
+.bord-content {
+	padding: 0!important; height: 100%;
+}
+
+.bord span {
+	font-size: 14pt; color: #dc5034; font-weight: 400;
+}
+
+.bord p {
+	float: none ; margin: 0 auto;
+}
+
+#menu-container {
+  background: url("/static/images/menu_background.png");
+}
+
+#menu-container .container {
+	background: transparent;
+}
+
+#hero-menu {
+
+  padding: 180px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/static/images/bfire3.jpg");
+}
+
+#hero-menu span {
+	color: white; 
+	margin: 0 auto; 
+	display: table; 
+	font-size: 30pt; 
+	font-weight: 500; 
+	font-family: Oswald; 
+	padding: 20px 10px;
+}
+
+#hero-location {
+	padding: 200px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("/static/images/communityjontv2.jpg");
+}
+
+#hero-location span {
+	text-align: center; 
+	color: white; 
+	margin: 0 auto; 
+	display: table; 
+	font-size: 30pt; 
+	font-weight: 500; 
+	font-family: Oswald; 
+	padding: 20px 10px;
+}
+
+#uwf-location {
+	background-color: #1a88cd;/*padding: 30px 300px;*/
+}
+
+#uwf-location img {
+	float: right
+}
+
+.container {
+	background: white;
+}
+
+.bord img {
+	border-radius: 10px 10px 0 0;
+}
+
+.bord p {
+	font-family: Roboto;
+}
+
+.menu-headliner {
+	margin: 0 auto; 
+	text-align: center; 
+	font-family: Raleway; 
+}
+
+.menu-headliner span {
+	font-size: 18pt;
+}
+
+.menu-item__title-box img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    top: -13%;
+    width: 68%;
+}
+
+.menu-item__title-box {
+    position: relative;
+    padding: 9px 15px 0 130px;
+    min-height: 75px;
+    z-index: 6;
+    background-color: gray;
+    color: #fff;
+        text-align: center;
+    padding: 30% 15px 5px;
+    margin-top: 150px;
+    border-radius: 50%;
+}
+
+.menu-item__title-box span {
+	margin-top: -40px; 
+	font-size: 15pt
+}
+
+/*
+@media (min-width: 544px)
+.menu-item__title-box {
+    text-align: center;
+    padding: 30% 15px 5px;
+    margin-top: 150px;
+}
+*/
+
+.menu-item .ingredients__copy {
+    position: relative;
+    padding: 15px 15px 10px;
+    z-index: 6;
+}
+
+img {vertical-align: middle;}
+
+.ingredients__copy {
+    /*background-color: white;*/
+    color: black;
+    padding: 20px;
+}

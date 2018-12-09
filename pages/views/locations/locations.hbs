@@ -1,0 +1,115 @@
+<div class="rustic-background">  
+	<div id="location-container">
+		<div class="container">
+      <h1> LOCATIONS </h1>	
+      <div class="container">
+      	<div class="row">
+	  			<div class="col-lg-4 bonfire-light-gray" style="margin-bottom: 10px;">
+				    <span>
+							<img src="/static/images/marker.svg" height="50px">
+						</span>
+						<h4 class="text-blue">
+							1741 E N Mile Road Suite 8, Pensacola, Florida
+						</h4>
+						<span class="text-orange">
+							<img src="/static/images/calendar.svg" height="50px">
+							<span class="text-blue">Hours</span>
+						</span>
+						<div role="contentinfo" aria-label="Status message" class="messages messages--status">
+						 OPEN NOW till 1am
+						</div>
+						<table id="hours-table" class="center">
+						  <tbody>
+				      	<tr>
+									<td>Sunday</td>
+									<td>11am-10pm</td>
+								</tr>
+						    <tr>
+									<td>Monday</td>
+									<td>11am-10pm</td>
+								</tr>
+								<tr>
+									<td>Tuesday</td>
+									<td>11am-10pm</td>
+								</tr>
+								<tr>
+									<td>Wednesday</td>
+									<td>11am-10pm</td>
+								</tr>
+								<tr>
+									<td>Thursday</td>
+									<td>11am-10pm</td>
+								</tr>
+								<tr class="hours-active">
+									<td>Friday</td>
+									<td>11am-1am</td>
+								</tr>
+								<tr>
+									<td>Saturday</td>
+									<td>11am-1am</td>
+								</tr>
+							</tbody>
+				  	</table>
+					</div>
+				<div class="col-lg-8" id="map">
+				</div>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcsOGZa3CZJRMGDErqQdgaM84lP5lWvrw&callback=initMap"
+				async defer></script>
+      </div>			  
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	/*
+		Bonfire coordinates
+		 30.530545, -87.224906 -> 30.530545%2C+-87.224906
+
+		URL needed for Google Maps API
+		https://www.google.com/maps/dir/?api=1&destination=30.530545%2C+-87.224906&origin=
+		*/
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 30.540140, lng: -87.229000},
+      markerInfoDisplay: "click",
+      disableDefaultUI: true,
+      gestureHandling: 'greedy',
+      zoom: 14,
+      //Removes city names from map
+      styles: [{
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels",
+        "stylers": [{
+          "visibility": "off"
+        }]
+      }, {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels",
+        "stylers": [{
+          "visibility": "off"
+        }]
+      }, {
+        "featureType": "administrative.locality",
+        "elementType": "labels",
+        "stylers": [{
+          "visibility": "off"
+        }]
+      }, {}]
+    });
+		var icon = {
+		    url: "/static/images/marker.svg", // url
+		    scaledSize: new google.maps.Size(70, 70), // scaled size
+		};
+    var marker = new google.maps.Marker({
+      position: {lat: 30.5305221, lng: -87.22487},
+      map: map,
+      title: 'Bonfire Pizza',
+      icon: icon
+    });
+  }
+/*
+{"address":"3120 Fairview Park Drive, Falls Church, VA 22042","zoom":16,"scrollZoom":true,"draggable":true,"disableUi":true,"keepCentered":false,"markerIcon":"","markersDraggable":false,"markerAtCenter":true,"markerInfoDisplay":"click","markerInfoMultiple":true,"markerPositions":[{"place":"3120 Fairview Park Drive, Falls Church, Virginia 22042","info":"<p>CTAC Headquarters<\/p>\n","info_selected_editor":"tinymce","info_max_width":"","custom_marker_icon":0}],"mapName":"","mapStyles":"","directions":"","apiKey":"AIzaSyA9TOaXV96sgzK_15tzcBwHr0cqKXZh9x4"}
+*/
+</script>

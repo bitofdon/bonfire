@@ -1,0 +1,222 @@
+.flame-parallax {
+    /* The image used */
+    background-image: url("/static/images/bonfire/bonfire_flame.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.savory-parallax {
+    /* The image used */
+    background-image: url("/static/images/bonfire/savory_pizza.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 990px) {
+  .flame-parallax,
+  .savory-parallax {
+    background-attachment: scroll;
+    height: 300px;
+  }
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #003946 !important;
+    text-decoration: none;
+}
+
+.rustic-background {
+  background: url("/static/images/menu_background.png");
+} 
+
+.h1, h1{
+  font-family: raleway !important;
+  font-weight: 500pt !important;
+  font-size: 50px !important;
+}
+
+.h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6{
+  font-family: oswald !important;
+  font-weight: 100pt !important;
+}
+
+h2 {
+  font-size: 40px !important;
+}
+
+.td, .p, td,  p, span {
+  font-family: oswald !important;
+}
+
+.bonfire-gray {
+  background: #acc0c6;
+}
+
+.bonfire-light-gray {
+  background: #e0e6e6; 
+}
+
+.bonfire-blue {
+  background: #003946 !important;
+}
+
+.bonfire-orange {
+  background: #dc5034 !important;
+}
+
+.text-blue {
+	color: #003946 !important;
+}
+
+.text-orange {
+	color: #dc5034 !important;
+}
+
+.text-gray {
+  color: #acc0c6;
+}
+
+.text-light-gray {
+  color: #e0e6e6;
+}
+
+#hours-table > td {
+	padding: 5px;
+	font-size: 15pt;
+	font-family: Source Sans Pro;
+	color: gray;
+}
+
+#hours-table td:nth-of-type(2) {
+	color: black;
+	font-weight: 700;
+	font-size: 16pt;
+}
+
+#are-we-open-box {
+	border: solid 1px gray;
+	padding: 3px 0px;
+	border-radius: 10px;
+	background: linear-gradient(to right, #e6ffe7, #f1ffee);
+	color: black;
+	font-size: 14pt;
+	font-family: oswald;
+	/*visibility: hidden;
+	display: none;*/
+}
+
+#are-we-closed-box {
+	border: solid 1px gray;
+	padding: 3px 0px;
+	border-radius: 10px;
+	background: linear-gradient(to right, #ffe6e6, #fde8e8);
+	color: black;
+	font-size: 14pt;
+	font-family: oswald;
+	visibility: hidden;
+	display: none;
+}
+
+.hours-active td:nth-of-type(1) {
+	font-weight:800;
+	color: black !important;
+}
+
+.messages--status {
+  color: #325e1c;
+  padding: 4px 10px;
+  font-weight: 500;
+  background-color: #f3faef;
+  /* border-color: #c9e1bd #c9e1bd #c9e1bd transparent; */
+  /* background-image: url(../../../../misc/icons/73b355/check.svg);*/
+  box-shadow: -8px 0 0 #77b259;
+}
+
+.messages--error {
+  background-color: #fcf4f2;
+  color: #a51b00;
+  padding: 4px 10px;
+  font-weight: 500;
+  border-color: #f9c9bf #f9c9bf #f9c9bf transparent;
+  box-shadow: -8px 0 0 #e62600;
+}
+
+#location-container .messages--error {
+  margin-bottom: 15px;
+  display: none;
+}
+
+#map {
+  min-height:350px;
+  margin-bottom: 10px;
+}
+
+#map-row {
+	padding-bottom: 70px;
+}
+
+#uwf-location .row:nth-of-type(2) {
+	padding-bottom: 40px;
+}
+
+#uwf-location ul {
+	list-style: none;
+	font-size: 15pt;
+}
+
+#uwf-location #uwf-building {
+	display: table; 
+	padding: 10px; 
+	border: solid 2px gray; 
+	border-radius: 10px; 
+	background: linear-gradient(to right, white, lightgray);
+}
+
+#uwf-building {
+	float: right;
+	margin-top: 30px;
+}
+
+#location-container {
+	padding-top: 160px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#pizzas-container #row-of-pizzas,
+#homepage-steps {
+  display: inline !important;
+}
+
+

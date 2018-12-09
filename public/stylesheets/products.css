@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro|Archivo+Narrow:600');
+
+#services-slider {
+  color: white;
+}
+
+#services-headline {
+  float: left;
+  margin-left: 90px;
+}
+
+#services-headline p,
+#services-headline h3 {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+@media only screen and (max-width: 1100px) {
+  #services-headline {
+    float: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .preview-container {
+  	margin: 50px 0px;
+  	width: 100%;
+  }
+
+  .preview-box {
+  	width: 80%;
+  	margin: 0;
+  	margin-top: 20px;
+  }
+}
