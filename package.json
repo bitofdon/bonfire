@@ -5,6 +5,13 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "engines": {
+    "node": "6.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitofdon/bonfire"
+  },
   "dependencies": {
     "aws-sdk": "^2.320.0",
     "cookie-parser": "~1.4.3",
